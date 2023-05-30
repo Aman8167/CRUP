@@ -1,0 +1,208 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.header{
+    width:100%;
+    padding:10px 30px;
+    background-color: #EE534F;
+}
+.header h5{
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 28px;
+    color:white;
+}
+/* upper btn box */
+.upper-btn-box{
+    width:100%;
+    height:100px;
+    display: flex;
+    padding:30px;
+}
+.upper-btn-box .left-box{
+    width:50%;
+    height:100%;
+   
+}
+.upper-btn-box .left-box button,.upper-btn-box .right-box button{
+    border:none;
+    outline:none;
+    background-color: #4286F5;
+    padding:13px;
+    font-size: 18px;
+    font-family: verdana;
+    color:#fff;
+    margin:0px 10px;
+
+}
+.upper-btn-box .right-box{
+    width:50%;
+    height:100%;
+}
+.upper-btn-box .right-box{
+
+    font-size: 25px;
+    color:#33B5E6;
+    padding :10px;
+}
+.upper-btn-box .right-box input{
+    width:70%;
+    padding:13px;
+    border:none;
+    outline:none;
+    border-bottom: 3px solid #4286F5;
+    font-size: 16px;
+    font-family: verdana;
+    font-weight: bold;
+
+}
+/* table-box */
+
+.table-box{
+    width:100%;
+    padding: 30px;
+
+}
+.table-box table{
+    width:100%;
+    
+
+}
+.table-box table tr th{
+    border-right:1px solid #ccc;
+    padding: 30px 0px 0px;
+    font-family:verdana;
+    font-family: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.table-box table tr td{
+    border-right:1px solid #ccc;
+    padding: 10px 0px 5px;
+    text-align: center;
+    font-family:verdana;
+    border-bottom: 1px solid #ccc;
+
+
+}
+.table-box table tr td button{
+     width:40%;
+    border:none;
+    outline:none;
+    background-color:#4286F5 ;
+    font-size:18px;
+    font-family:vardana ;
+    color: #fff;
+    padding:5px 0px 5px ;
+
+}
+/* start modal coding */
+.modal{
+    width:0;
+    height:auto;
+    position:fixed;
+    background-color: #f2f2f2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) ;
+    display:flex;
+    border-top:20px groove #4286F5;
+    opacity: 0;
+    z-index:-1;
+    transition: 0.7s ease-in-out;
+    
+}
+.modal.active{ 
+     opacity: 1; 
+     z-index:1; 
+    width:50%; 
+ }
+.modal .close-icon{
+    position:absolute;
+    right:-20;
+    top:-45px;
+    font-size: 30px;
+    padding:10px;
+    color:#EE534F;
+}
+.modal .left-modal{
+    width:30%;
+    height:100%;
+    background-color:#f2f2f2;
+
+}
+.modal .left-modal .img-box{
+
+    width:100%;
+    height:300px;
+    display:flex;
+    padding:20px;
+    position:relative;
+
+}
+.modal .left-modal .img-box input{
+    width:40px;
+    height:40px;
+    position: absolute;
+    right:20px;
+    top:60px;
+    opacity: 0;
+
+}
+.modal .left-modal .img-box i{
+    font-size:30px;
+    padding:10px;
+    position:absolute;
+    right:20px;
+    top:60px;
+    color:#4286F5;
+}
+
+.modal .left-modal .img-box img{
+    border-radius: 10px;
+}
+
+.modal .right-modal{
+    width:70%;
+    height:100%;
+    border-left:5px groove #4286F5;
+    padding:30px;
+
+}
+.modal .right-modal .input-box{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.modal .right-modal .input-box label{
+    font-size:20px;
+    font-weight:bold;
+    font-family: sans-serif;
+    margin: 20px 0px;
+}
+.modal .right-modal .input-box input{
+     width:50%;
+     margin:10px 0px;
+     border:none;
+     padding:10px;
+     outline:none;
+     background-color: transparent;
+     border-bottom: 3px solid #4286F5;
+}
+.modal .right-modal .input-box button{
+    width:48%;
+    border:none;
+    outline:none;
+    background-color: #4286F5;
+    padding:13px;
+    font-size: 18px;
+    font-family: verdana;
+    margin:10px 10px;
+    color:#fff;
+
+
+}
+.modal .right-modal .input-box .button:disabled{
+    filter: grayscale(20%);
+}

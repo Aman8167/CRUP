@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet"href="css/indexse.css">
+        <title>
+           Employees
+        </title>
+    </head>
+    <body>
+        <div class="header">
+        <h5>Company product</h5>
+        </div>
+        <div class="upper-btn-box
+        ">
+            <div class="left-box"><button id="add-btn"><i class="fa fa-plus"></i> &nbsp;Add product</i>
+            </button>
+            <button style="background-color: #33B5E6;"><i class="fa fa-eraser" ></i> &nbsp;Clear filtering</button></div>
+            <div class="right-box">
+                <i class="fa fa-search"></i>
+                <input type="text" id="pdctid"placeholder="Enter company id">
+                <button style="background-color: #EE534F;">search</button>
+            </div>
+        </div>
+        <div class="table-box">
+            <table >
+                <tr>
+                    <th>Sr No</th>
+                    <th> Profile</th>
+                    <th>ProductId</th>
+                    <th>ProductName</th>
+                    <th>CategoryName</th>
+                    <th>CategoryId</th>
+                    <th>CategoryDetails</th>
+                </tr>
+                <tbody id="table-data">
+
+                </tbody>
+            </table>
+        </div>
+
+    <div class="modal">
+            <i class="fa fa-times-circle close-icon"></i>
+            <div class="left-modal">
+                <div class="img-box">
+                    <img id="profile-pic" src="images/R.jpg"  width="120" height="120" alt="">
+                    <i class="fa fa-plus" ></i>
+                    <input type="file" id="upload-field">
+                </div>
+            </div>
+            <div class="right-modal">
+             <form id="register-form">
+                <div class="input-box">
+                    <label for="ProductId">Id</label>
+                    <input type="text" reqiured  id="id">
+                </div>
+                <div class="input-box">
+                    <label for="ProductName">Name</label>
+                    <input type="text" reqiured id="name">
+                    </div>
+                    <div class="input-box">
+                        <label for="CategoryName">Name</label>
+                        <input type="text" reqiured id="names">
+                    </div>
+                    <div class="input-box">
+                        <label for="CategoryId">Id</label>
+                        <input type="text" reqiured id="ids">
+                    </div>
+                    <div class="input-box">
+                        <button id="register-Btn">Register</button>
+                        <button   disabled="disabled" style="background-color: #EE534F;">Update</button>
+                    </div>
+       </form>
+            </div>
+        </div>
+         <script src="js/indexw.js"> 
+            </script>
+    </body>
+    </html>
